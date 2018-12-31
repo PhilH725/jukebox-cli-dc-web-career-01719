@@ -30,6 +30,7 @@ def play(songs)
   
   if song_choice in (0..songs.length)
     puts "Playing #{songs[song_choice}"
+  end
   
 end
 
