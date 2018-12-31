@@ -30,7 +30,10 @@ def play(songs)
   
   if songs[song_choice.to_i]
     puts "Playing #{songs[song_choice.to_i]}"
-  elsif songs[]
+  elsif songs.index(song_choice)
+    puts "Playing #{songs[song.index(song_choice)]}"
+  else
+    puts "Invalid input, please try again"
   end
   
 end
