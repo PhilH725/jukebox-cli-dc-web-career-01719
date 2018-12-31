@@ -30,6 +30,7 @@ def play(songs)
   
   if song_choice.to_i
     puts song_choice
+  end
   
   if songs[song_choice.to_i]
     puts "Playing #{songs[song_choice.to_i]}"
