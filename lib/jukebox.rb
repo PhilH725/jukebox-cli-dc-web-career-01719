@@ -30,7 +30,6 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_choice = gets.chomp
   
-  #binding.pry
   if songs.include?(song_choice)
     song_index = songs.index(song_choice)
     puts "Playing #{songs[song_index]}"
@@ -64,4 +63,4 @@ def run(songs)
   end
 end
 
-#run(songs)
+run(songs)
