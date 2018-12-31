@@ -34,7 +34,7 @@ def play(songs)
     song_index = songs.index(song_choice)
     puts "Playing #{songs[song_index]}"
   elsif song_choice.to_i > 0
-    song_index = song[song_choice.to_i] - 1
+    song_index = song[song_choice.to_i]
     puts "Playing #{songs[song_index]}"
   else
     puts "Invalid input, please try again"
