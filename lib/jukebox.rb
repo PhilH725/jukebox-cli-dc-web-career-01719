@@ -1,3 +1,5 @@
+require "pry"
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -29,6 +31,7 @@ def play(songs)
   song_choice = gets.chomp
   
   if songs.include?(song_choice)
+    binding.pry
     puts "Playing #{songs.index(song_choice)]}"
   elsif songs[song_choice.to_i]
     puts "Playing #{songs[song_choice.to_i]}"
