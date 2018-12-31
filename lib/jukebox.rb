@@ -29,7 +29,7 @@ def play(songs)
   song_choice = gets.chomp
   
   if song_choice in (0..songs.length)
-    puts "Playing #{songs[song_choice}"
+    puts "Playing #{songs[song_choice]}"
   end
   
 end
