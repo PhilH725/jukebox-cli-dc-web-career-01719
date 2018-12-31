@@ -33,10 +33,10 @@ def play(songs)
   if songs.include?(song_choice)
     song_index = songs.index(song_choice)
     puts "Playing #{songs[song_index]}"
-  elsif song_choice == "0"
-    puts "Playing #{songs[0]}"
+  #elsif song_choice == "0"
+   # puts "Playing #{songs[0]}"
   elsif song_choice.to_i > 0 && song_choice.to_i < songs.length
-    song_index = song_choice.to_i
+    song_index = song_choice.to_i + 1
     puts "Playing #{songs[song_index]}"
   else
     puts "Invalid input, please try again"
