@@ -28,7 +28,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_choice = gets.chomp
   
-  if songs[song_choice]
+  if songs[song_choice.to_i]
     puts "Playing #{songs[song_choice]}"
   end
   
