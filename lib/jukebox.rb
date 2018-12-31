@@ -28,8 +28,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_choice = gets.chomp
   
-  if songs[song_choice.to_i]
-    puts "Playing #{songs[song_choice.to_i]}"
+  if song_choice.length == song_choice.to_i.length
+    puts"Playing #{songs[song_choice.to_i]}"
   elsif songs.index(song_choice)
     puts "Playing #{songs[song.index(song_choice)]}"
   else
