@@ -10,3 +10,46 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+def help
+  puts "I accept the following commands:"
+  puts "- help : displays this help message"
+  puts "- list : displays a list of songs you can play"
+  puts "- play : lets you choose a song to play"
+  puts "- exit : exits this program"
+end
+
+def list(songs)
+  for i in (1..songs.length)
+    puts "#{i}. #{songs[i - 1]}"
+  end
+end
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  song_choice = gets.chomp
+  
+end
+
+def exit_jukebox
+  puts "Goodbye"
+end
+
+def run(songs)
+  help
+  puts "Please enter a command:"
+  user_command = gets.chomp
+  if user_command == "list"
+    list(songs)
+  elsif user_command == "play"
+    play(songs)
+  elsif user_command == "help"
+    help
+  elsif user_command == "exit"
+    exit_jukebox
+  end
+  if user_command != "exit"
+    run(songs)
+  end
+end
+
+run(songs)
